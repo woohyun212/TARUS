@@ -1,0 +1,2 @@
+# TARUS
+ Todoist_Auto_Reflect_University_Schedules
