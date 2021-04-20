@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:/_University/_Lecture/Data_Science_and_AI_introductory_Coding/.idea/Data_Science_and_AI_introductory Coding.iml" filepath="D:/_University/_Lecture/Data_Science_and_AI_introductory_Coding/.idea/Data_Science_and_AI_introductory Coding.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Todoist_Auto_Reflect_University_Schedules.iml" filepath="$PROJECT_DIR$/.idea/Todoist_Auto_Reflect_University_Schedules.iml" />
     </modules>
   </component>
