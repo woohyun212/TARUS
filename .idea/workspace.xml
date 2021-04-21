@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f081da95-dff9-4d42-b192-a299e2adddc3" name="Default Changelist" comment="Sections 관련 기능들 개발 &#10;&#10;Tasks 를 먼저할까 싶었지만, 그냥 순서대로 Sections 먼저했다.&#10;Sections 관련 메소드도 '일단' 완성했다.&#10;내가 API 문서를 읽을 줄 몰랐고, 영어를 못하는 게 흠이다.&#10;parameters 가 require 되는지 아닌지에 대한 설명이 있는데,&#10;request 마다 parameter 가 진짜 엄청 많아서 언제 이걸 다 처리하지 싶다.&#10;&#10;당장 필요한 메소드만 만들고&#10;&#10;그 이후 작업들은 차차 이어 나가야겠다.">
+    <list default="true" id="f081da95-dff9-4d42-b192-a299e2adddc3" name="Default Changelist" comment="Task&#10;&#10;Tasks 를 먼저할까 싶었지만, 그냥 순서대로 Sections 먼저했다.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoist_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/todoist_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todoist_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/todoist_rest_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <recent name="D:\_University\_Lecture\Data_Science_and_AI_introductory_Coding\chapter8" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.todoist_api">
+  <component name="RunManager" selected="Python.todoist_rest_api">
     <configuration name="ch_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Data_Science_and_AI_introductory Coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,7 +137,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="todoist_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="todoist_rest_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Todoist_Auto_Reflect_University_Schedules" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -149,7 +149,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/todoist_api.py" />
+      <option name="SCRIPT_NAME" value="D:\MakeSomething\Programming\Python\Todoist_Auto_Reflect_University_Schedules\todoist_rest_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,7 +160,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.todoist_api" />
+        <item itemvalue="Python.todoist_rest_api" />
         <item itemvalue="Python.ch_3" />
         <item itemvalue="Python.ch_2" />
         <item itemvalue="Python.ch_1" />
@@ -236,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618921322269</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Sections 관련 기능들 개발 &#10;&#10;Tasks 를 먼저할까 싶었지만, 그냥 순서대로 Sections 먼저했다.&#10;Sections 관련 메소드도 '일단' 완성했다.&#10;내가 API 문서를 읽을 줄 몰랐고, 영어를 못하는 게 흠이다.&#10;parameters 가 require 되는지 아닌지에 대한 설명이 있는데,&#10;request 마다 parameter 가 진짜 엄청 많아서 언제 이걸 다 처리하지 싶다.&#10;&#10;당장 필요한 메소드만 만들고&#10;&#10;그 이후 작업들은 차차 이어 나가야겠다.">
+      <created>1618934222087</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618934222087</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,6 +262,7 @@
     <MESSAGE value="pycharm project set" />
     <MESSAGE value="chapter8 도전문제 풀이" />
     <MESSAGE value="Project 관련 기능들 개발 &#10;&#10;project 관련 메소드들 '일단은' 완성했다.&#10;&#10;이제 Task 를 작업할까 &#10;&#10;내 몸이 너무 지친다!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project 관련 기능들 개발 &#10;&#10;project 관련 메소드들 '일단은' 완성했다.&#10;&#10;이제 Task 를 작업할까 &#10;&#10;내 몸이 너무 지친다!" />
+    <MESSAGE value="Sections 관련 기능들 개발 &#10;&#10;Tasks 를 먼저할까 싶었지만, 그냥 순서대로 Sections 먼저했다.&#10;Sections 관련 메소드도 '일단' 완성했다.&#10;내가 API 문서를 읽을 줄 몰랐고, 영어를 못하는 게 흠이다.&#10;parameters 가 require 되는지 아닌지에 대한 설명이 있는데,&#10;request 마다 parameter 가 진짜 엄청 많아서 언제 이걸 다 처리하지 싶다.&#10;&#10;당장 필요한 메소드만 만들고&#10;&#10;그 이후 작업들은 차차 이어 나가야겠다." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sections 관련 기능들 개발 &#10;&#10;Tasks 를 먼저할까 싶었지만, 그냥 순서대로 Sections 먼저했다.&#10;Sections 관련 메소드도 '일단' 완성했다.&#10;내가 API 문서를 읽을 줄 몰랐고, 영어를 못하는 게 흠이다.&#10;parameters 가 require 되는지 아닌지에 대한 설명이 있는데,&#10;request 마다 parameter 가 진짜 엄청 많아서 언제 이걸 다 처리하지 싶다.&#10;&#10;당장 필요한 메소드만 만들고&#10;&#10;그 이후 작업들은 차차 이어 나가야겠다." />
   </component>
 </project>

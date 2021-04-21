@@ -1,13 +1,13 @@
 import requests, uuid, json
 
 
-class TodoistAPI:
+class TodoistRESTAPI:
 
     def __init__(self, api_token):
         self.api_token: str = api_token
         self.projects: dict = {}
         for project in self.GetAllProjectData():
-            self.projects.update({project['name']: str(project['id'])})
+            self.projects.update({project['name']: project['id']})
         # you can get API token here
         # https://todoist.com/prefs/integrations
 
@@ -16,15 +16,15 @@ class TodoistAPI:
         """
         :return list
         [{
-            'id': int,
-            'color': int,
-            'name': str,
-            'comment_count': int,
-            'shared': bool,
-            'favorite': bool,
-            'sync_id': int,
-            'inbox_project': bool,
-            'url': str
+            'id': Integer,
+            'color': Integer,
+            'name': String,
+            'comment_count': Integer,
+            'shared': Boolean,
+            'favorite': Boolean,
+            'sync_id': integer,
+            'inbox_project': Boolean,
+            'url': String
         }]
         """
         return requests.get(
@@ -85,18 +85,15 @@ class TodoistAPI:
                 "Authorization": "Bearer %s" % self.api_token
             }).json()
 
-    def GetProjectId(self, project_name: str):
-        return self.projects[project_name]
-
     # Sections
     def GetAllSectionsData(self, project_id):
         """
         :return list
         [{
-            'id': int,
-            'project_id': int,
-            'order': int,
-            'name': str
+            'id': Integer,
+            'project_id': Integer,
+            'order': Integer,
+            'name': String
         }]
         """
         return requests.get(
@@ -109,7 +106,7 @@ class TodoistAPI:
         requests.post(
             "https://api.todoist.com/rest/v1/sections",
             data=json.dumps({
-                "project_id": str(project_id),
+                "project_id": project_id,
                 "name": section_name
             }),
             headers={
@@ -142,26 +139,60 @@ class TodoistAPI:
                 "Authorization": "Bearer %s" % self.api_token
             })
 
+    def GetSectionId(self, project_id, section_name):
+        section_data = self.GetAllSectionsData(project_id)
+        for section in section_data:
+            if section['name'] == section_name:
+                return section['id']
+        return 0
+
     # Tasks
-    def GetActiveTasks(self, project_id, section_id=None):
+    def GetActiveTasks(self, project_id, section_id=None, label_id=None, filter=None, lang=None, ids=None):
         return requests.get(
             "https://api.todoist.com/rest/v1/tasks",
             params={
                 "project_id": project_id,
-                "section_id": section_id
+                "section_id": section_id,
+                "label_id": label_id,
+                "filter": filter,
+                "lang": lang,
+                "ids": ids
             },
             headers={
                 "Authorization": "Bearer %s" % self.api_token
             }).json()
 
-    def CreateNewTask(self, content, due_string, due_lang, priority):
+    def CreateNewTask(self, content, project_id=None, section_id=None, parent_id=None, order=None, label_ids=None,
+                      priority=None, due_string=None, due_date=None, due_lang='en', assignee=None):
+        """
+        Please note that only one of the due_* fields can be used at the same time.
+        (due_lang is a special case)
+        :param content: String
+        :param project_id: Integer
+        :param section_id: Integer
+        :param parent_id: Integer
+        :param order: Integer
+        :param label_ids: Array of Integers
+        :param priority: Integer
+        :param due_string: String
+        :param due_date: String
+        :param due_lang: String
+        :param assignee: String
+        """
         requests.post(
             "https://api.todoist.com/rest/v1/tasks",
             data=json.dumps({
-                "content": "Buy Milk",
-                "due_string": "tomorrow at 12:00",
-                "due_lang": "kr",
-                "priority": 4
+                "content": content,
+                "project_id": project_id,
+                "section_id": section_id,
+                "parent_id": parent_id,
+                "order": order,
+                "label_ids": label_ids,
+                "priority": priority,
+                "due_string": due_string,
+                "due_date": due_date,
+                "due_lang": due_lang,
+                "assignee": assignee
             }),
             headers={
                 "Content-Type": "application/json",
@@ -169,8 +200,12 @@ class TodoistAPI:
                 "Authorization": "Bearer %s" % self.api_token
             }).json()
 
-    def GetSingleActiveTask(self):
-        pass
+    def GetSingleActiveTask(self, task_id):
+        return requests.get(
+            f"https://api.todoist.com/rest/v1/tasks/{task_id}",
+            headers={
+                "Authorization": "Bearer %s" % self.api_token
+            }).json()
 
     def UpdateTask(self):
         pass
