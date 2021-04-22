@@ -86,6 +86,13 @@ class TodoistRESTAPI:
             }).json()
 
     # Sections
+    def GetSectionId(self, project_id, section_name):
+        section_data = self.GetAllSectionsData(project_id)
+        for section in section_data:
+            if section['name'] == section_name:
+                return section['id']
+        return 0
+
     def GetAllSectionsData(self, project_id):
         """
         :return list
@@ -138,13 +145,6 @@ class TodoistRESTAPI:
             headers={
                 "Authorization": "Bearer %s" % self.api_token
             })
-
-    def GetSectionId(self, project_id, section_name):
-        section_data = self.GetAllSectionsData(project_id)
-        for section in section_data:
-            if section['name'] == section_name:
-                return section['id']
-        return 0
 
     # Tasks
     def GetActiveTasks(self, project_id, section_id=None, label_id=None, filter=None, lang=None, ids=None):
