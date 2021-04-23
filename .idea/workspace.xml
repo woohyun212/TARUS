@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f081da95-dff9-4d42-b192-a299e2adddc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/이름뭐라고짓.py" afterDir="false" />
+    <list default="true" id="f081da95-dff9-4d42-b192-a299e2adddc3" name="Default Changelist" comment="chapter9">
       <change afterPath="$PROJECT_DIR$/../../../../_University/_Lecture/Data_Science_and_AI_introductory_Coding/chapter9/UNDHR.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../_University/_Lecture/Data_Science_and_AI_introductory_Coding/chapter9/ch_2.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../_University/_Lecture/Data_Science_and_AI_introductory_Coding/chapter9/ch_3.py" afterDir="false" />
@@ -13,7 +12,6 @@
       <change afterPath="$PROJECT_DIR$/../../../../_University/_Lecture/Data_Science_and_AI_introductory_Coding/chapter9/ch_5.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../../_University/_Lecture/Data_Science_and_AI_introductory_Coding/chapter9/ch_6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_campus_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_campus_parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619180701345</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="TARUS 성공&#10;&#10;불러온 정보들을 토대로 Todoist에 Task 추가하기 - 성공&#10;&#10;정말 당장 필요한 기능만 후딱 구현하다보니 3일만에 완성했다.&#10;에초에 완성하고나니 내가 직접 작성한 코드는 몇백줄 되지 않았다.&#10;그래도 작업하면서 파이썬 수업듣는게 복습도 되고 좋았다.&#10;&#10;코드를 조금더 간소화 시킬 수 있을 것 같은데 어디서 부터 고쳐야할지 막막하다..&#10;이게 '스파게티' 인건가;;">
+      <created>1619185091810</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1619185091810</updated>
+    </task>
+    <task id="LOCAL-00016" summary="코드 수정">
+      <created>1619185361505</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1619185361505</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,7 +332,9 @@
     <MESSAGE value="E-캠퍼스에 로그인 &amp; 데이터 파싱&#10;&#10;대학교 E-캠퍼스에서 강좌목록을 불러오는 것 - 성공&#10;선택된 강좌에서 이번주의 강좌와 기한을 불러오는 것 - 성공&#10;&#10;앞으로 할 일:&#10;자동으로 모든 강좌의 정보와 마감 기한을 불러오기&#10;불러온 정보들을 토대로 Todoistdp 추가하기" />
     <MESSAGE value="E-캠퍼스에서 데이터 파싱하는 과정 클래스화&#10;&#10;자동으로 모든 강좌의 정보와 마감 기한을 불러오기 - 성공&#10;생각보다 bs4 는 굉장히 강력한 라이브러리였다..!&#10;아무생각없이 인덱스와 슬라이싱만으로 파싱을 하려고 했으나,&#10;bs4 에 굉장히 많은 의존을 했다.&#10;dict 자료형 은근히 편한것 같으면서도 불편하고, 헷갈린다..&#10;&#10;내가 한 코딩을 누가 평가좀 해줬으면 좋겠다.&#10;&#10;앞으로 할일:&#10;    불러온 정보들을 토대로 Todoist에 Task 추가하기" />
     <MESSAGE value="parser -&gt; e_campus_parser 로 이름 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="parser -&gt; e_campus_parser 로 이름 변경" />
+    <MESSAGE value="TARUS 성공&#10;&#10;불러온 정보들을 토대로 Todoist에 Task 추가하기 - 성공&#10;&#10;정말 당장 필요한 기능만 후딱 구현하다보니 3일만에 완성했다.&#10;에초에 완성하고나니 내가 직접 작성한 코드는 몇백줄 되지 않았다.&#10;그래도 작업하면서 파이썬 수업듣는게 복습도 되고 좋았다.&#10;&#10;코드를 조금더 간소화 시킬 수 있을 것 같은데 어디서 부터 고쳐야할지 막막하다..&#10;이게 '스파게티' 인건가;;" />
+    <MESSAGE value="코드 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="코드 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
