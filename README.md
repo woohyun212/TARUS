@@ -1,10 +1,9 @@
 # TARUS
 Todoist_Auto_Reflect_University_Schedules
 
-<p>The official Todoist Python API library 가 있지만 그건 Sync API 다.</p>
-<p>내가 만드는건 REST API를 이용한 것이다.</p>
+<p>The official Todoist Python API library 가 있지만 그건 Sync API 다.<br>
+내가 만드는 것은 REST API를 이용한 것이다.</p>
 <p>왜 굳이 REST API를 사용하냐고 묻는다면</p>
-<br>
 <p>Sync API를 읽다가 느낀건데, Sync API는 project의 id 값을 불러올 방법이 없었다.</p>
 project id를 알기위해 project id를 알아야 한다..(?)<br>
 
