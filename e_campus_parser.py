@@ -38,3 +38,6 @@ class LectureParser:
         deadline = [element.find(class_="text-ubstrap").text[:42].split("~")[1].strip() for element in class_smcc_avmd]
         return dict(zip(title, deadline))
 
+
+if __name__ == "__main__":
+    pass
